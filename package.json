@@ -1,0 +1,32 @@
+{
+  "name": "nightwatchjs-servicenow",
+  "version": "0.0.1",
+  "description": "Servicenow Testing framework",
+  "main": "nightwatch.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "nightwatch": "^0.9.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node nightwatch.js -e chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacebenson/nightwatchjs-servicenow.git"
+  },
+  "keywords": [
+    "servicenow",
+    "selenium",
+    "javascript",
+    "nightwatchjs"
+  ],
+  "author": "Jace Benson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacebenson/nightwatchjs-servicenow/issues"
+  },
+  "homepage": "https://github.com/jacebenson/nightwatchjs-servicenow#readme"
+}

@@ -1,0 +1,99 @@
+{
+    "src_folders": ["tests"],
+    "output_folder": "reports",
+    "custom_commands_path": "custom-commands",
+    "custom_assertions_path": "",
+    "page_objects_path": "",
+    "globals_path": "",
+
+    "selenium": {
+        "start_process": true,
+        "server_path": "./bin/selenium-server-standalone-3.0.1.jar",
+        "log_path": "",
+        "port": 4444,
+        "cli_args": {
+            "webdriver.chrome.driver": "./bin/chromedriver.exe",
+            "webdriver.gecko.driver": "./bin/geckodriver.exe",
+            "webdriver.ie.driver": "./bin/IEDriverServer.exe",
+            "webdriver.edge.driver": "./bin/MicrosoftWebDriver.exe",
+            "webdriver.phantomjs.driver": "./bin/phantomjs.exe"
+        }
+    },
+
+    "test_settings": {
+        "default": {
+            "launch_url": "http://localhost",
+            "selenium_port": 4444,
+            "selenium_host": "localhost",
+            "silent": true,
+            "screenshots": {
+                "enabled": true,
+                "path": "screenshots/phantomjs",
+                "on_failure": true,
+                "on_error": false
+            },
+            "desiredCapabilities": {
+                "browserName": "phantomjs",
+                "acceptSslCerts": true,
+                "phantomjs.binary.path": "./bin/phantomjs.exe",
+                "phantomjs.cli.args": ["--ignore-ssl-errors=true"],
+                "phantomjs.page.settings.userAgent" : "Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36"
+
+
+            }
+        },
+
+        "chrome": {
+            "screenshots": {
+                "enabled": true,
+                "path": "screenshots/chrome",
+                "on_failure": true,
+                "on_error": false
+            },
+            "desiredCapabilities": {
+                "browserName": "chrome",
+                "acceptSslCerts": true
+            }
+        },
+        "firefox": {
+            "screenshots": {
+                "enabled": true,
+                "path": "screenshots/firefox",
+                "on_failure": true,
+                "on_error": false
+            },
+            "desiredCapabilities": {
+                "browserName": "firefox",
+                "javascriptEnabled": true,
+                "acceptSslCerts": true,
+                "marionette": true
+            }
+        },
+        "edge": {
+            "screenshots": {
+                "enabled": true,
+                "path": "screenshots/edge",
+                "on_failure": true,
+                "on_error": false
+            },
+            "desiredCapabilities": {
+                "browserName": "MicrosoftEdge",
+                "javascriptEnabled": true,
+                "acceptSslCerts": true
+            }
+        },
+        "ie": {
+            "screenshots": {
+                "enabled": true,
+                "path": "screenshots/ie",
+                "on_failure": true,
+                "on_error": false
+            },
+            "desiredCapabilities": {
+                "browserName": "internet explorer",
+                "javascriptEnabled": true,
+                "acceptSslCerts": true
+            }
+        }
+    }
+}
