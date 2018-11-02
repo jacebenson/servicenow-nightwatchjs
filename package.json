@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "dependencies": {
-    "nightwatch": "^0.9.8"
+    "nightwatch": "^0.9.21"
   },
   "devDependencies": {},
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jacebenson/nightwatchjs-servicenow.git"
+    "url": "git+https://gitlab.com/jacebenson/servicenow-nightwatchjs.git"
   },
   "keywords": [
     "servicenow",
@@ -26,7 +26,7 @@
   "author": "Jace Benson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jacebenson/nightwatchjs-servicenow/issues"
+    "url": "https://gitlab.com/jacebenson/servicenow-nightwatchjs/issues"
   },
-  "homepage": "https://github.com/jacebenson/nightwatchjs-servicenow#readme"
+  "homepage": "https://gitlab.com/jacebenson/servicenow-nightwatchjs#readme"
 }

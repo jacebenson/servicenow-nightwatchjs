@@ -18,6 +18,6 @@
     
     `node nightwatch.js -e chrome`
 
-# Contributing
-  
-  See [CONTRIBUTING.MD](https://github.com/jacebenson/nightwatchjs-servicenow/blob/master/CONTRIBUTING.md)
+# Drivers
+
+- Chrome [Download versions](https://chromedriver.storage.googleapis.com/index.html)
